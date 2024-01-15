@@ -6,7 +6,7 @@ import { connectDB } from "@/utils/mongoose";
 
 async function loadTasks() {
   connectDB();
-  const tasks = await Task.find();
+  const tasks = await fetch("https://crud-mongodb-phi.vercel.app//api/tasks");
 
   return tasks;
 }

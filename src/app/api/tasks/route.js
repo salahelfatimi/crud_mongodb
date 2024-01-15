@@ -6,7 +6,7 @@ import { NextResponse } from "next/server";
 // get all data in mongodb database
 export async function GET() {
   connectDB();
-  const tasks = await fetch("https://crud-mongodb-phi.vercel.app/api/tasks");
+  const tasks = await Task.find();
   return NextResponse.json(tasks);
   
 }
