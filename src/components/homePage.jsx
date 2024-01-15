@@ -14,6 +14,7 @@ async function loadTasks() {
 
 
 async function HomePage() {
+    
     const tasks = await loadTasks();
     return (
       <>
