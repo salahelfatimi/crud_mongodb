@@ -6,6 +6,7 @@ import { connectDB } from "@/utils/mongoose";
 async function loadTasks() {
   connectDB();
   const tasks = await Task.find();
+  
   return tasks;
 }
 
