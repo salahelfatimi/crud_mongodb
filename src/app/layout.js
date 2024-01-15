@@ -1,5 +1,6 @@
 import "./globals.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: "Crud MongoDB",
@@ -13,7 +14,7 @@ export default function RootLayout({ children }) {
         <div className="  h-screen bg-[#fff]">
           {children}
           <SpeedInsights />
-         
+          <Analytics />
         </div>
       </body>
     </html>

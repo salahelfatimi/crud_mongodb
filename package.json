@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.3",
     "feather-icons": "^4.29.1",
     "mongoose": "^8.0.4",
