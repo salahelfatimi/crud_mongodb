@@ -3,14 +3,15 @@ import TasksCard from "@/components/taskCard";
 import Task from "@/models/Task";
 import { connectDB } from "@/utils/mongoose";
 
+
+async function Home() {
+  
 async function loadTasks() {
   connectDB();
   const tasks = await Task.find();
-  
+
   return tasks;
 }
-
-async function Home() {
   const tasks = await loadTasks();
   return (
     <>
@@ -36,7 +37,7 @@ async function Home() {
             </thead>
             <tbody className="bg-[#00ed64]">
               {tasks.map((task,index) => (
-                <TasksCard task={task} index={index} key={task._id} />
+                <TasksCard task={task}  key={task._id} />
               ))}
             </tbody>
           </table>

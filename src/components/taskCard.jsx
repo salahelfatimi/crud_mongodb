@@ -22,7 +22,7 @@ export default  function TasksCard({task,index}) {
   }
   return (
     <tr  className=" text-center  ">           
-      <td scope="row" className="px-6 py-4  text-base font-extrabold">{index+1}</td>
+      <td scope="row" className="px-6 py-4  text-base font-extrabold">{task._id}</td>
       <td className="py-6 px-4 whitespace-nowrap">{task.title}</td>
       <td className="py-6 px-4 whitespace-nowrap">{task.description}</td>
       <td className="py-6 px-4 flex gap-4 items-center justify-center">

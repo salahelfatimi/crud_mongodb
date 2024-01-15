@@ -7,7 +7,8 @@ import { NextResponse } from "next/server";
 export async function GET() {
   connectDB();
   const tasks = await Task.find();
-  return NextResponse.json(tasks);
+  return tasks;
+  
 }
 
 
