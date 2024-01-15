@@ -11,8 +11,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="  h-screen bg-[#fff]">
-          <div className="">{children}</div>
+          {children}
           <SpeedInsights />
+         
         </div>
       </body>
     </html>
