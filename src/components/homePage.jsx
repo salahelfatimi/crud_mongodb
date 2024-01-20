@@ -10,9 +10,6 @@ async function loadTasks() {
 
   return tasks;
 }
-
-
-
 async function HomePage() {
     
     const tasks = await loadTasks();

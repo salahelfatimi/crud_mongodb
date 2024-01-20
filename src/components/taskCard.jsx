@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Edit, Trash2 } from "react-feather";
+
 export default  function TasksCard({task,index}) {
   const router = useRouter()
   const handleDelete= async (id)=>{
