@@ -4,9 +4,9 @@ import TasksCard from "@/components/taskCard";
 import Task from "@/models/Task";
 import { connectDB } from "@/utils/mongoose";
 
-async function loadTasks() {
+ function loadTasks() {
   connectDB();
-  const tasks = await Task.find();
+  const tasks =  Task.find();
 
   return tasks;
 }
