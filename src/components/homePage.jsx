@@ -37,7 +37,7 @@ async function HomePage() {
               </thead>
               <tbody className="bg-[#00ed64]">
                 {tasks.map((task,index) => (
-                  <TasksCard task={task} index={index}  key={task._id} />
+                  <TasksCard id={task._id.toString()} title={task.title} description={task.description} index={index}  key={task._id} />
                 ))}
               </tbody>
             </table>
